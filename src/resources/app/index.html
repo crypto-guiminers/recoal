@@ -15,163 +15,9 @@
 <body class="miner">
   <div class="draggable"></div>
   <a href="#" title="Miner settings" class="header-button settings"><i class="fa fa-gear"/></i></a>
-  <a href="#" title="Help and what's next" class="header-button help"><i class="fa fa-question-circle-o"/></i></a>
   <a href="#" title="Minimize" class="header-button minimize"><i class="fa fa-window-minimize"/></i></a>
   <a href="#" title="Exit miner" class="header-button exit"><i class="fa fa-times"/></i></a>
   <div class="grid">
-    <div class="sidebar-info">
-      <div class="logo">
-        <img src="static/i/stellite-miner-logo.png"/>
-      </div>
-      <div class="section spec">
-        <table class="stats">
-          <tr>
-            <td class="title">
-              Ticker
-            </td>
-            <td>
-              XTL
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Supply
-            </td>
-            <td>
-              21 billion
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Circulation
-            </td>
-            <td>
-              <!-- 2.1 billion (~10%) -->
-              <span id="circulation">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Market cap
-            </td>
-            <td>
-              <!-- USD 3 million -->
-              <span id="market_cap">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Price
-            </td>
-            <td>
-              <!-- 0.00000020 BTC -->
-              <span id="price">Updating</span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="section network">
-        <h3>Network</h3>
-        <table class="stats">
-          <tr>
-            <td class="title">
-              Hashrate
-            </td>
-            <td>
-              <!-- 20 MH/s -->
-              <span id="network_hashrate">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Difficulty
-            </td>
-            <td>
-              <!-- 1 234 912 392 -->
-              <span id="network_difficulty">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Height
-            </td>
-            <td>
-              <!-- 108 000 -->
-              <span id="network_height">Updating</span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="section exchanges">
-        <h3>Exchanges</h3>
-        <table class="stats">
-          <tr>
-            <td class="title">
-              Volume today
-            </td>
-            <td>
-              <!-- 30.3264 BTC -->
-              <span id="trading_volume">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              TradeOgre
-            </td>
-            <td>
-              <!-- 3.4222 BTC -->
-              <span id="trading_tradeogre_volume">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Crex24
-            </td>
-            <td>
-              <!-- 1.8239 BTC -->
-              <span id="trading_crex_volume">Updating</span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="section records">
-        <h3>All Time High</h3>
-        <table class="stats">
-          <tr>
-            <td class="title">
-              Volume
-            </td>
-            <td>
-              <!-- 30.3264 BTC -->
-              <span id="record_volume">Updating</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="title">
-              Price
-            </td>
-            <td>
-              <!-- 0.000000023 BTC -->
-              <span id="record_price">Updating</span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="section contact">
-        <h3>Contact</h3>
-        <div class="links">
-          <a target="_blank" href="https://www.stellite.cash">Official Website</a>
-          <a target="_blank" href="https://bitcointalk.org/index.php?topic=2813261.0">ANN</a>
-          <a target="_blank" href="https://discord.gg/8PhF342">Discord</a>
-          <a target="_blank" href="https://www.reddit.com/r/stellite/">Reddit</a>
-          <a target="_blank" href="https://github.com/stellitecoin">GitHub</a>
-          <a target="_blank" href="https://www.facebook.com/stellitecash">Facebook</a>
-          <a target="_blank" href="https://twitter.com/stellitecash">Twitter</a>
-          <a target="_blank" href="https://coinmarketcap.com/currencies/stellite">Coin Market Cap</a>
-          <a target="_blank" href="https://coinlib.io/coin/XTL/Stellite">CoinLib</a>
-        </div>
-      </div>
-    </div>
     <div class="mining">
       <div class="miner">
         <div class="mining-stats">
@@ -221,14 +67,14 @@
           <div class="payment">
             <div class="estimate">
               <div class="detail">you are mining an estimated</div>
-              <div id="miner_payout">0.00 XTL</div>
+              <div id="miner_payout">0.00 ETN</div>
               <div class="detail">per day</div>
             </div>
             <div class="address">
               <pre id="miner_address">
 Updating
               </pre>
-              <div class="detail">Stellite Wallet Address</div>
+              <div class="detail">Electroneum Wallet Address</div>
             </div>
           </div>
         </div>
@@ -279,10 +125,10 @@ Updating
     </div>
     <div class="section address">
       <p>
-        Stellite address to mine to
+        Electroneum address to mine to
       </p>
       <div>
-        <input id="settings_mining_address" type="text" placeholder="Your Stellite address"/>
+        <input id="settings_mining_address" type="text" placeholder="Your Electroneum address"/>
       </div>
     </div>
     <div class="section max-usage">
@@ -341,72 +187,6 @@ Updating
       </a>
     </div>
   </div>
-  <div id="help" class="help dn">
-    <div class="header">
-      <h2>What's next?</h2>
-    </div>
-    <div class="section">
-      <p class="ac">
-        You are mining and earning Stellite coins, what should you do now?
-      </p>
-
-      <div class="next-piece">
-        <h3>Visit your mining pool</h3>
-        <p>
-          Enter your Stellite address to see your payment history, set payment limits and see more stats
-        </p>
-      </div>
-      <div class="next-piece">
-        <h3>Learn about Stellite</h3>
-        <p>
-          And what it brings to the cryptocurrency world by visiting the <a class="link" target="_blank" href="https://www.stellite.cash">official Stellite website</a>
-        </p>
-      </div>
-      <div class="next-piece">
-        <h3>Come say hi</h3>
-        <p>
-          Join the amazing Stellite community on <a class="link" target="_blank" href="https://discord.gg/8PhF342">Discord</a>
-        </p>
-      </div>
-      <div class="next-piece">
-        <h3>Buy and sell Stellite</h3>
-        <p>
-          Start trading Stellite on one of our listed exchanges
-        </p>
-      </div>
-      <div class="next-piece">
-        <h3>Mine 'till you drop!</h3>
-        <p>
-          Learn more about mining in the <a class="link" target="_blank" href="https://discord.gg/8PhF342">#mining</a>
-          channel on <a class="link" target="_blank" href="https://discord.gg/8PhF342">Discord</a>
-        </p>
-      </div>
-      <div class="next-piece">
-        <h3>Be a stalker</h3>
-        <p>
-          Follow us on <a class="link" href="https://twitter.com/stellitecash">Twitter</a>, <a class="link" href="https://www.facebook.com/stellitecash">Facebook</a>
-          and <a class="link" href="https://www.reddit.com/r/stellite/">Reddit</a>
-        </p>
-      </div>
-      <div class="cb"></div>
-    </div>
-    <div class="header">
-      <h2>Something not quite right?</h2>
-    </div>
-    <div class="section center">
-      <p>
-        The Stellite community is very friendly and always ready to help. Join us in the <a class="link" target="_blank" href="https://discord.gg/8PhF342">#mining</a>
-         or <a class="link" target="_blank" href="https://discord.gg/8PhF342">#issues</a> channels on <a class="link" target="_blank" href="https://discord.gg/8PhF342">Discord</a>
-        and we'll help you out. Some common answers can be found on the miner's download page.
-      </p>
-    </div>
-    <div class="section action">
-      <a class="button back close-help" href="#">
-        Close
-      </a>
-    </div>
-  </div>
-
   <script src="static/lib/astiloader/astiloader.js"></script>
   <script src="static/lib/astimodaler/astimodaler.js"></script>
   <script src="static/lib/astinotifier/astinotifier.js"></script>

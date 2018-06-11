@@ -14,7 +14,7 @@ import (
 
 	astilectron "github.com/asticode/go-astilectron"
 	bootstrap "github.com/asticode/go-astilectron-bootstrap"
-	"github.com/donovansolms/stellite-gui-miner/src/gui/miner"
+	"github.com/crypto-guiminers/electroneum/src/gui/miner"
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 )
@@ -103,8 +103,8 @@ func New(
 		Frame:           astilectron.PtrBool(isDebug),
 		BackgroundColor: astilectron.PtrStr("#0B0C22"),
 		Center:          astilectron.PtrBool(true),
-		Height:          astilectron.PtrInt(700),
-		Width:           astilectron.PtrInt(1175),
+		Height:          astilectron.PtrInt(650),
+		Width:           astilectron.PtrInt(1000),
 	}
 
 	if isDebug {
