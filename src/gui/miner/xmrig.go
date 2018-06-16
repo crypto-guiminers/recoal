@@ -77,7 +77,7 @@ type XmrigPoolConfig struct {
 	Pass      string `json:"pass"`
 	Keepalive bool   `json:"keepalive"`
 	Nicehash  bool   `json:"nicehash"`
-	Variant   string `json:"variant"`
+	Variant   int    `json:"variant"`
 }
 
 // XmrigAPIConfig contains the Xmrig API config
@@ -110,7 +110,7 @@ type XmrigResponse struct {
 		Threads [][]float64 `json:"threads"`
 	} `json:"hashrate"`
 	Results struct {
-		DiffCurrent int      `json:"diff_current"`
+		DiffCurrent int64    `json:"diff_current"`
 		SharesGood  int      `json:"shares_good"`
 		SharesTotal int      `json:"shares_total"`
 		AvgTime     int      `json:"avg_time"`
@@ -138,7 +138,7 @@ func NewXmrig(config Config) (*Xmrig, error) {
 	miner := Xmrig{
 		// We've switched to our own miner in V4, xtlrig, but I'm keeping
 		// everything else xmrig for clarity
-		name:     "xtlrig",
+		name:     "guirig",
 		endpoint: endpoint,
 	}
 	// xmrig appends either nvidia or amd to the miner if it's GPU only
@@ -151,7 +151,6 @@ func NewXmrig(config Config) (*Xmrig, error) {
 	}
 	miner.Base.executableName = filepath.Base(config.Path)
 	miner.Base.executablePath = filepath.Dir(config.Path)
-
 	return &miner, nil
 }
 
@@ -337,10 +336,10 @@ func (miner *Xmrig) createConfig(
 			{
 				URL:       poolEndpoint,
 				User:      walletAddress,
-				Pass:      "Stellite GUI Miner",
+				Pass:      "CryptoGUI Miner",
 				Keepalive: true,
 				Nicehash:  false,
-				Variant:   "xtl",
+				Variant:   1,
 			},
 		},
 		API: XmrigAPIConfig{
@@ -376,10 +375,10 @@ func (miner *Xmrig) createGPUConfig(
 			{
 				URL:       poolEndpoint,
 				User:      walletAddress,
-				Pass:      "Stellite GUI Miner",
+				Pass:      "CryptoGUI Miner",
 				Keepalive: true,
 				Nicehash:  false,
-				Variant:   "xtl",
+				Variant:   1,
 			},
 		},
 		API: XmrigAPIConfig{

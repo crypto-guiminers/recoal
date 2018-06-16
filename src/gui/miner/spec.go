@@ -1,7 +1,7 @@
 package miner
 
 // SupportedMiners contains a list of the currently supported miners
-var SupportedMiners = []string{"xtl-stak", "xtlrig"}
+var SupportedMiners = []string{"gui-stak", "guirig"}
 
 // Config holds miner specific configuration information
 type Config struct {
@@ -36,7 +36,7 @@ type Stats struct {
 	// HashrateHuman is the H/s, KH/s or MH/s representation of hashrate
 	HashrateHuman string `json:"hashrate_human"`
 	// CurrentDifficulty as set by the pool
-	CurrentDifficulty int `json:"current_difficulty"`
+	CurrentDifficulty int64 `json:"current_difficulty"`
 	// SharesGood is the good shares counter
 	SharesGood int `json:"shares_good"`
 	// SharesGood is the bad shares counter

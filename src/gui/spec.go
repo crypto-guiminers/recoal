@@ -58,7 +58,7 @@ type GlobalStats struct {
 	LastBlock   struct {
 		ID         int    `json:"id"`
 		Height     int    `json:"height"`
-		Difficulty int    `json:"difficulty"`
+		Difficulty string `json:"difficulty"`
 		TxCount    int    `json:"tx_count"`
 		Reward     string `json:"reward"`
 		Timestamp  string `json:"timestamp"`

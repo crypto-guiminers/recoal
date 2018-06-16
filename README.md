@@ -1,17 +1,17 @@
-![](git-assets/miner-logo.png)
+![Logo](git-assets/miner-logo.png "Logo")
 
-#  Stellite GUI Miner
+# Electroneum GUI Miner
 
-The Stellite GUI miner is a beautiful, easy to use, interface for mining Stellite.
-It is aimed at getting people that have never mined Stellite into the crypto
+The Electroneum GUI miner is a beautiful, easy to use, interface for mining Electroneum.
+It is aimed at getting people that have never mined Electroneum into the crypto
 game by making it really simple to get started.
 
-![Screenshot](https://i.imgur.com/ruK7z4Y.png "Screenshot")
+![Screenshot](git-assets/screenshot.png "Screenshot")
 
 We currently support two very popular miner backends:
 
-1. [xtl-stak](https://github.com/stellitecoin/xtl-stak)
-2. [xtlrig](https://github.com/stellitecoin/xtlrig) (note: [xmrig-nvidia](https://github.com/xmrig/xmrig-nvidia) and [xmrig-amd](https://github.com/xmrig/xmrig-amd) does not support our v4 proof-of-work algorithm yet)
+1. [gui-stak](https://github.com/crypto-guiminers/gui-stak)
+2. [guirig](https://github.com/stellitecoin/xtlrig)
 
 If you'd like to fork this miner for you own coin, please see the __forking__
 section later.

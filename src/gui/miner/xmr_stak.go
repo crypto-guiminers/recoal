@@ -32,7 +32,7 @@ type XmrStakResponse struct {
 		Highest float64         `json:"highest"`
 	} `json:"hashrate"`
 	Results struct {
-		DiffCurrent int     `json:"diff_current"`
+		DiffCurrent int64   `json:"diff_current"`
 		SharesGood  int     `json:"shares_good"`
 		SharesTotal int     `json:"shares_total"`
 		AvgTime     float64 `json:"avg_time"`
@@ -66,7 +66,7 @@ func NewXmrStak(config Config) (*XmrStak, error) {
 	miner := XmrStak{
 		// We've switched to our own miner in V4, xtl-stak, but I'm keeping
 		// everything else xmr-stak for clarity
-		name:     "xtl-stak",
+		name:     "gui-stak",
 		endpoint: endpoint,
 	}
 	miner.Base.executableName = filepath.Base(config.Path)
@@ -402,9 +402,9 @@ func (miner *XmrStak) buildPoolConfig(
 	return `
 "pool_list" :
 [
-	{"pool_address" : "` + poolEndpoint + `", "wallet_address" : "` + walletAddress + `", "rig_id" : "", "pool_password" : "Stellite GUI Miner", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
+	{"pool_address" : "` + poolEndpoint + `", "wallet_address" : "` + walletAddress + `", "rig_id" : "", "pool_password" : "CryptoGUI Miner", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 1 },
 ],
-"currency" : "stellite",
+"currency" : "electroneum",
 		`
 }
 

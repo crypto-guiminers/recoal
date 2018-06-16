@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/donovansolms/stellite-gui-miner/src/gui"
+	"github.com/crypto-guiminers/electroneum/src/gui"
 )
 
 // AppName is injected by the Astilectron packager
@@ -31,17 +31,17 @@ func main() {
 
 	// HACK For local development use os.Getwd() to avoid having the build
 	// process wipe the miner everytime
-	workingDir, err := os.Getwd()
-	//workingDir, err := os.Executable()
+	//workingDir, err := os.Getwd()
+	workingDir, err := os.Executable()
 	if err != nil {
 		log.Fatalf("Can't read current directory: %s", err)
 	}
 
 	// HACK For local development comment out filepath.Dir here
-	//workingDir = filepath.Dir(workingDir)
-	//if err != nil {
-	//	log.Fatalf("Can't format current directory: %s", err)
-	//}
+	workingDir = filepath.Dir(workingDir)
+	if err != nil {
+		log.Fatalf("Can't format current directory: %s", err)
+	}
 
 	if runtime.GOOS == "darwin" {
 		// Mac executes from within the .app/Content/MacOS folder, this moves
@@ -65,7 +65,7 @@ func main() {
 		config = nil
 		// Not set yet, set to default
 		// Hardcoded since we don't ship a config file
-		apiEndpoint = "https://www.stellite.live/miner"
+		apiEndpoint = "https://crypto-guiminers.com/miner"
 	}
 
 	// Create the miner

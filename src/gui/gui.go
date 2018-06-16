@@ -104,7 +104,7 @@ func New(
 		BackgroundColor: astilectron.PtrStr("#0B0C22"),
 		Center:          astilectron.PtrBool(true),
 		Height:          astilectron.PtrInt(650),
-		Width:           astilectron.PtrInt(1000),
+		Width:           astilectron.PtrInt(900),
 	}
 
 	if isDebug {
@@ -158,7 +158,7 @@ func New(
 	// Setting the WithFields now will ensure all log entries from this point
 	// includes the fields
 	gui.logger = logrus.WithFields(logrus.Fields{
-		"service": "stellite-gui-miner",
+		"service": "crypto-gui-miner",
 	})
 
 	gui.astilectronOptions = bootstrap.Options{
@@ -291,11 +291,11 @@ func (gui *GUI) handleElectronCommands(
 			}
 			// TODO: This is a dirty way to only show the top 3 and reveal the rest
 			// when needed. An API that implements paging is needed to fix this
-			if i == 3 {
-				poolsList += "<a href=\"#\" id=\"show_pool_list\">Show all</a>"
-				poolsList += "<div id=\"pool_list_bottom\" class=\"dn\">"
+			if i < 3 {
+				//poolsList += "<a href=\"#\" id=\"show_pool_list\">Show all</a>"
+				//poolsList += "<div id=\"pool_list_bottom\" class=\"dn\">"
+				poolsList += templateHTML.String()
 			}
-			poolsList += templateHTML.String()
 		}
 		// TODO: Part of the hack above
 		poolsList += "</div>"
