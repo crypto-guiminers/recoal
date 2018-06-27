@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/crypto-guiminers/electroneum/src/gui"
+	"github.com/crypto-guiminers/recoal/src/gui"
 )
 
 // AppName is injected by the Astilectron packager

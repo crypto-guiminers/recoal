@@ -3,7 +3,7 @@ package gui
 import (
 	"time"
 
-	"github.com/crypto-guiminers/electroneum/src/gui/miner"
+	"github.com/crypto-guiminers/recoal/src/gui/miner"
 )
 
 // Config contains the basic configuration for a miner

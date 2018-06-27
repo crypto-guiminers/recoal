@@ -3,7 +3,7 @@ package miner_test
 import (
 	"testing"
 
-	"github.com/crypto-guiminers/electroneum/src/gui/miner"
+	"github.com/crypto-guiminers/recoal/src/gui/miner"
 )
 
 // TestHumanizeTime tests if conversion from seconds to mintes and hours

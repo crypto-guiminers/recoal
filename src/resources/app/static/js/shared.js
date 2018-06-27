@@ -17,7 +17,7 @@ let shared = {
   // validateWalletAddress checks if the given address is a valid Stellite
   // wallet address
   validateWalletAddress: function(address) {
-    if (address.substring(0, 3) == 'etn')
+    if (address.substring(0, 3) == 'cty')
     {
       return true;
     }

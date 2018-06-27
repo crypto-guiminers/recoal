@@ -79,7 +79,7 @@ let firstrun = {
         // invalid ones
         if (shared.validateWalletAddress(address) == false)
         {
-          alert("Please enter a valid Electroneum address starting with 'etn'");
+          alert("Please enter a valid ReCoal address starting with 'cty'");
           return false;
         }
       }

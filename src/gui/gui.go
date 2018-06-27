@@ -14,7 +14,7 @@ import (
 
 	astilectron "github.com/asticode/go-astilectron"
 	bootstrap "github.com/asticode/go-astilectron-bootstrap"
-	"github.com/crypto-guiminers/electroneum/src/gui/miner"
+	"github.com/crypto-guiminers/recoal/src/gui/miner"
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 )
