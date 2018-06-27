@@ -65,7 +65,7 @@ let app = {
           $('#trading_crex_volume').html(parsed.volume_crex + ' BTC');
           $('#record_volume').html(parsed.records.volume + ' BTC');
           $('#record_price').html(parsed.records.price + ' BTC');
-          $('#miner_payout').html(parsed.xtl_per_day + ' ETN');
+          $('#miner_payout').html(parsed.xtl_per_day + ' RECL');
           $('#pool').html(parsed.pool_html);
           break;
         case "miner_stats":
@@ -261,7 +261,7 @@ let app = {
     $('#miner_difficulty').html('0');
     $('#miner_shares').html('0');
     $('#miner_shares_bad').html('0');
-    $('#miner_payout').html('0.00 ETN');
+    $('#miner_payout').html('0.00 RECL');
   },
   setupChart: function() {
     var chart = $("#hashrate_chart");
@@ -277,10 +277,10 @@ let app = {
           data: [0,0,0,0,0,0],
           backgroundColor: [
 
-            'rgba(9, 27, 38, 1.0)'
+            'rgba(255, 255, 255, 1.0)'
           ],
           borderColor: [
-            'rgba(232,212,0,9)'
+            'rgba(0,0,0,9)'
           ],
           borderWidth: 1,
         }]

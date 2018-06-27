@@ -11,11 +11,11 @@
 @color-blue-dark: #091B26;
 @color-blue-darker: #020D14;
 @color-blue-dark-lighter: #0D112D;
-@color-purple-grey: #8284a5;
-@color-link: #00FFFF;
-@color-stellite-purple: #23BEE2;
-@color-stellite-purple-dark: #1794B1;
-@color-selected: #E8D400;
+@color-purple-grey: #777777;
+@color-link: #000000;
+@color-stellite-purple: #444444;
+@color-stellite-purple-dark: #333333;
+@color-selected: #000000;
 @color-text: #333333;
 
 /*
@@ -110,7 +110,7 @@ input::-moz-focus-inner {
   &.error {
     border: 1px solid @color-notifier-error;
     background-color: @color-notifier-error-background;
-    color: @color-text;
+    color: #ffffff;
 
     h2 {
       text-transform: uppercase;
@@ -127,8 +127,8 @@ input::-moz-focus-inner {
   }
   &.ann {
     border: 1px solid @color-selected;
-    background-color: @color-notifier-background;
-    color: @color-text;
+    background-color: #333333;
+    color: #ffffff;
 
     h2 {
       text-transform: uppercase;
@@ -191,7 +191,7 @@ p.description {
 a.button {
   display: inline-block;
   background-color: @color-button-default;
-  color: @color-text;
+  color: #ffffff;
   padding: 10px;
   .border-radius(4px);
   text-transform: uppercase;
@@ -278,7 +278,7 @@ body.miner {
 
   a.header-button {
     position: absolute;
-    color: #D59D0E;
+    color: #333333;
     z-index: 1001;
     font-size: 24px;
     .opacity(0.6);
@@ -403,7 +403,7 @@ body.miner {
           top: -10px;
         }
         div.hashrate {
-          color: #fff;
+          color: #333333;
           font-size: 48px;
         }
         div.xmrstak {
@@ -467,7 +467,7 @@ body.miner {
           font-size: 14px;
           th {
             font-weight: normal;
-            color: #eee;
+            color: #545454;
           }
           td {
             color: #999;
@@ -527,10 +527,27 @@ body.miner {
       }
     }
 
+    div.links {
+      float: left;
+      padding: 16px;
+      font-size: 16px;
+
+      a {
+        display: inline-block;
+        padding-right: 10px;
+        color: #333333;
+        .opacity(0.8);
+
+        &:hover {
+          .opacity(1.0);
+        }
+      }
+    }
+
     a.etn {
       float: right;
       img {
-        max-height: 65px;
+        max-width: 185px;
       }
     }
   }
@@ -542,7 +559,7 @@ body.miner {
     height: 100%;
     .opacity(0.95);
     position: absolute;
-    background-color: @color-blue-darker;
+    background-color: #ffffff;
 
     h2 {
       padding: 20px;
@@ -563,19 +580,20 @@ body.miner {
     }
 
     div.nice-select {
-      background-color: @color-blue-dark;
-      border-color: @color-stellite-purple-dark;
+      background-color: #ffffff;
+      border-color: #333333;
       height: 28px;
       line-height: 26px;
       ul.list {
-        background-color: @color-blue-dark;
-        border: 1px solid @color-blue-dark-lighter;
+        background-color: #ffffff;
+        border: 1px solid #333333;
 
         li.option {
           &:hover,
           &:focus,
           &.focus,
           &.selected {
+            color: #ffffff;
             background-color: @color-stellite-purple-dark;
           }
         }
@@ -644,18 +662,24 @@ body.miner {
           margin-bottom: 20px;
           position: relative;
           cursor: pointer;
-          border: 1px solid @color-stellite-purple-dark;
+          border: 1px solid @color-stellite-purple;
           .border-radius(4px);
           padding: 10px;
           max-width: 75%;
           margin-left: auto;
           margin-right: auto;
-          background-color: @color-blue-darker;
+          color: #666666;
+          .opacity(0.7);
+          //background-color: @color-blue-darker;
           &:hover {
-            background-color: @color-blue-dark-lighter;
+            .opacity(1.0);
+            color: #333333;
+            border: 1px solid @color-stellite-purple-dark;
+            //background-color: @color-blue-dark-lighter;
           }
 
           &.selected {
+            .opacity(1.0);
             border-color: @color-selected;
           }
 
@@ -675,7 +699,7 @@ body.miner {
               font-size: 14px;
               th {
                 font-weight: normal;
-                color: #eee;
+                color: #545454;
                 text-align: center;
               }
               td {
@@ -817,7 +841,7 @@ body.firstrun {
     //text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #D59D0E;
+    color: #333333;
     z-index: 1001;
     font-size: 14px;
     text-transform: uppercase;
@@ -880,7 +904,7 @@ body.firstrun {
   #intro_anim_logo {
     text-align: center;
     img {
-      width: 213px;
+      width: 460px;
     }
   }
 
@@ -898,6 +922,8 @@ body.firstrun {
         max-width: 300px;
         font-size: 18px;
         padding: 10px;
+        .opacity(0.8);
+
         h3 {
           color: @color-stellite-purple;
           padding-bottom: 10px;
@@ -913,6 +939,7 @@ body.firstrun {
 
         &:hover {
           border: 1px solid @color-stellite-purple;
+          .opacity(1.0);
         }
       }
     }
@@ -929,6 +956,7 @@ body.firstrun {
       max-width: 300px;
       font-size: 18px;
       padding: 10px;
+      .opacity(0.8);
       h3 {
         color: @color-stellite-purple;
         padding-bottom: 10px;
@@ -943,6 +971,7 @@ body.firstrun {
       }
 
       &:hover {
+        .opacity(1.0);
         border: 1px solid @color-stellite-purple;
       }
     }
@@ -994,12 +1023,17 @@ body.firstrun {
         max-width: 75%;
         margin-left: auto;
         margin-right: auto;
-        background-color: @color-blue-darker;
+        .opacity(0.7);
+        //background-color: @color-blue-darker;
         &:hover {
-          background-color: @color-blue-dark-lighter;
+          .opacity(1.0);
+          color: #333333;
+          border: 1px solid @color-stellite-purple-dark;
+          //background-color: @color-blue-dark-lighter;
         }
 
         &.selected {
+          .opacity(1.0);
           border-color: @color-selected;
         }
 
@@ -1019,12 +1053,11 @@ body.firstrun {
             font-size: 14px;
             th {
               font-weight: normal;
-              color: #eee;
+              color: #545454;
             }
             td {
               color: #999;
               text-align: center;
-
             }
           }
         }

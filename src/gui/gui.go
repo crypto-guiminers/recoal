@@ -101,7 +101,7 @@ func New(
 		// If frame is false, the window frame is removed. If isDebug is true,
 		// we show the frame to have debugging options available
 		Frame:           astilectron.PtrBool(isDebug),
-		BackgroundColor: astilectron.PtrStr("#0B0C22"),
+		BackgroundColor: astilectron.PtrStr("#ffffff"),
 		Center:          astilectron.PtrBool(true),
 		Height:          astilectron.PtrInt(650),
 		Width:           astilectron.PtrInt(900),
