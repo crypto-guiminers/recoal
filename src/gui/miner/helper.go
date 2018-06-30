@@ -11,9 +11,9 @@ import (
 // CreateMiner creates a supported miner from the given configuration
 func CreateMiner(config Config) (Miner, error) {
 	switch strings.ToLower(config.Type) {
-	case "gui-stak":
+	case "recoal-stak":
 		return NewXmrStak(config)
-	case "guirig":
+	case "recoalrig":
 		return NewXmrig(config)
 	}
 
