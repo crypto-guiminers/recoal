@@ -56,12 +56,12 @@ type GlobalStats struct {
 	Pool        PoolData `json:"pool"`
 	Circulation string   `json:"circulation"`
 	LastBlock   struct {
-		ID         int    `json:"id"`
-		Height     int    `json:"height"`
-		Difficulty string `json:"difficulty"`
-		TxCount    int    `json:"tx_count"`
-		Reward     string `json:"reward"`
-		Timestamp  string `json:"timestamp"`
+		ID         int     `json:"id"`
+		Height     int     `json:"height"`
+		Difficulty string  `json:"difficulty"`
+		TxCount    int     `json:"tx_count"`
+		Reward     float64 `json:"reward"`
+		Timestamp  string  `json:"timestamp"`
 	} `json:"last_block"`
 	Difficulty      string `json:"difficulty"`
 	Height          string `json:"height"`

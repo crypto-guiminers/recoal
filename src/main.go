@@ -65,7 +65,7 @@ func main() {
 		config = nil
 		// Not set yet, set to default
 		// Hardcoded since we don't ship a config file
-		apiEndpoint = "https://crypto-guiminers.com/miner"
+		apiEndpoint = "https://crypto-guiminers.com/recoal"
 	}
 
 	// Create the miner
