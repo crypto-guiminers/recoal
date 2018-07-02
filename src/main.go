@@ -26,22 +26,22 @@ func main() {
 	debug := flag.Bool("d", false, "Enable debug mode")
 	flag.Parse()
 
-	// We need to get the acutal working directory to ensure proper operation
+	// We need to get the actual working directory to ensure proper operation
 	// on all platforms
 
 	// HACK For local development use os.Getwd() to avoid having the build
 	// process wipe the miner everytime
-	workingDir, err := os.Getwd()
-	//workingDir, err := os.Executable()
+	//workingDir, err := os.Getwd()
+	workingDir, err := os.Executable()
 	if err != nil {
 		log.Fatalf("Can't read current directory: %s", err)
 	}
 
 	// HACK For local development comment out filepath.Dir here
-	/*workingDir = filepath.Dir(workingDir)
+	workingDir = filepath.Dir(workingDir)
 	if err != nil {
 		log.Fatalf("Can't format current directory: %s", err)
-	}*/
+	}
 
 	if runtime.GOOS == "darwin" {
 		// Mac executes from within the .app/Content/MacOS folder, this moves

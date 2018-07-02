@@ -1,9 +1,9 @@
 ![Logo](git-assets/miner-logo.png "Logo")
 
-# Electroneum GUI Miner
+# ReCoal GUI Miner
 
-The Electroneum GUI miner is a beautiful, easy to use, interface for mining Electroneum.
-It is aimed at getting people that have never mined Electroneum into the crypto
+The ReCoal GUI miner is a beautiful, easy to use, interface for mining ReCoal.
+It is aimed at getting people that have never mined ReCoal into the crypto
 game by making it really simple to get started.
 
 ![Screenshot](git-assets/screenshot.png "Screenshot")
