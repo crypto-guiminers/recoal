@@ -79,7 +79,7 @@ let firstrun = {
         // invalid ones
         if (shared.validateWalletAddress(address) == false)
         {
-          alert("Please enter a valid ReCoal address starting with 'cty'");
+          alert("Please enter a valid ReCoal address starting with 'co'");
           return false;
         }
       }
